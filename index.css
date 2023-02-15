@@ -1,1 +1,18 @@
 /*  CSS STYLE COMMENTS HERE  */
+/* Using element selector below */
+p {
+    color: blue;
+    text-align: end;
+  }
+  /* Using id selector below */
+#para1 {
+    color: red;
+    text-align: center;
+  }
+  /* Using class selector below */
+.section {
+    background-color: rgb(186, 186, 251);
+    padding: 2em;
+    border-radius: 10px;
+    margin-block: 1rem;
+  }
