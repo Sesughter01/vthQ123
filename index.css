@@ -20,11 +20,11 @@ section::after{
   display: block;
   /* width: 10px; */
    height: 5px;
-
+  clear: left;
 }
 section{
   height: 100%;
-  overflow: hidden;
+  
 }
 section img{
   float:left;
@@ -138,6 +138,8 @@ a:hover{
     padding: 2em;
     border-radius: 10px;
     margin-block: 1rem;
+    overflow: auto;
+    border: 1px solid red;
   }
 
   .center{
