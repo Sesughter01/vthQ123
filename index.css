@@ -1,18 +1,156 @@
 /*  CSS STYLE COMMENTS HERE  */
 /* Using element selector below */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200&display=swap');
+
+img{
+  width:50%;
+  
+}
+section::before{
+  content: "";
+  background-color: red;
+  display: block;
+  /* width: 10px;*/
+  height: 5px; 
+
+}
+section::after{
+  content: "";
+  background-color: red;
+  display: block;
+  /* width: 10px; */
+   height: 5px;
+
+}
+section{
+  height: 100%;
+  overflow: hidden;
+}
+section img{
+  float:left;
+}
+
+#section_four img{
+  clear:left;
+}
+
 p {
-    color: blue;
-    text-align: end;
+  font-family: 'Nunito Sans', sans-serif;
+  /* font-size: 48px; */
   }
   /* Using id selector below */
 #para1 {
     color: red;
-    text-align: center;
+    
   }
+#para2 {
+    color: blue;
+   
+  }
+#para3 {
+     color: green;
+   
+  }
+#para4 {
+    color: yellowgreen;
+  
+  }
+#para5 {
+    color: lightcoral;
+  
+  } 
+#para6 {
+    color: purple;
+   
+  }
+#para7 {
+    color: red;
+  
+  }
+#para8 {
+    color: dimgray;
+
+  }
+  li{
+    list-style: none;
+    display: inline-block;
+  }
+  /* Child selector */
+  body>header>h2{
+    color: brown;
+  }
+  /* Descendant selector */
+main  header{
+  background-color: aqua;
+}
+
+
+
+/* Adjacent selector */
+ header + main h2{
+  color: yellow;
+ }
+ li + li {
+  /* background-color: lime; */
+  /* color: red; */
+  padding: 0.5rem;
+ }
+
+ /* General sibling selector */
+
+ header ~ main h2{
+  color: yellow;
+ }
+/* 
+a{
+ 
+} */
+
+li:hover{
+  background-color: brown;
+  padding: 1rem 1.5rem;
+}
+/* unvisited */
+ a:link{
+  text-decoration: none;
+  color: red;
+  cursor: pointer;
+ }
+
+/* visited */
+a:visited{
+  color: yellow;
+}
+
+/* Pseudo c */
+
+/* Hovered */
+a:hover{
+  color: wheat;
+}
   /* Using class selector below */
+
+  .container_gallery{
+
+  }
 .section {
     background-color: rgb(186, 186, 251);
     padding: 2em;
     border-radius: 10px;
     margin-block: 1rem;
+  }
+
+  .center{
+    text-align: center;
+  }
+  .large{
+    font-size: 200%;
+  }
+  #para2::first-line{
+    color: red;
+    font-variant: small-caps;
+  }
+  #para3::first-letter{
+    color: red;
+    /* font-variant: small-caps; */
   }

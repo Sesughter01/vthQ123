@@ -30,35 +30,49 @@
    3. External styling
 -->
 <body>
+   <header>
+       <h2>Outside header</h2>
+   </header>
+   <article>Lorem ipsum dolor sit amet.</article>
     <main style=" height: 100vh; ">
          <header>
               <!-- Logo below -->
-              <h4 style="color:blue">StationMaster</h4>
+              <h2>StationMaster</h2>
               <nav>
                  <ul >
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#section_one" target="blank">Home</a></li>
+                    <li><a href="#section_two" target="blank">About</a></li>
+                    <li><a href="#section_three" target="blank">Products</a></li>
+                    <li><a href="#section_four" target="blank">Contact</a></li>
                  </ul>
               </nav>
          </header>
-         <section class="section" id="section_one">
-            <img src="./assets/woman1.jpg" alt="female corporate executive" style="width:30%">
-            <p id="para1">Lorem ipsum dolor sit amet.</p>
-         </section>
-         <section class="section" id="section_two">
-            <img src="./assets/woman2.jpg" alt="female corporate executive 2" style="width:30%">
-            <p id="para2">Lorem ipsum dolor sit amet.</p>
-         </section>
-         <section class="section" id="section_three">
-            <img src="./assets/man1.jpg" alt="male corporate executive" style="width:30%">
-            <p id="para3">Lorem ipsum dolor sit amet.</p>
-         </section>
-         <section class="section" id="section_four">
-            <img src="./assets/man2.jpg" alt="male corporate executive" style="width:30%">
-            <p id="para3">Lorem ipsum dolor sit amet.</p>
-         </section>
+         <div class="container_gallery">
+
+            <section class="section" id="section_one">
+               <img src="./assets/woman1.jpg" alt="female corporate executive" >
+               <h1>Lorem, ipsum.</h1>
+               <p class="large" id="para1">Lorem ipsum dolor sit amet.</p>
+               <p  id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque reprehenderit illum inventore id fugiat eius.</p>
+            </section>
+            <section class="section" id="section_two">
+               <img src="./assets/woman2.jpg" alt="female corporate executive 2" >
+               <h1>Lorem, ipsum.</h1>
+               <p id="para3">Lorem ipsum dolor sit amet.</p>
+               <p id="para4">Lorem ipsum dolor sit amet.</p>       </section>
+            <section class="section" id="section_three">
+               <img src="./assets/man1.jpg" alt="male corporate executive" >
+               <h1>Lorem, ipsum.</h1>
+               <p id="para5">Lorem ipsum dolor sit amet.</p>
+               <p id="para6">Lorem ipsum dolor sit amet.</p>
+            </section>
+            <section class="section" id="section_four">
+               <img src="./assets/man2.jpg" alt="male corporate executive" >
+               <h1>Lorem, ipsum.</h1>
+               <p id="para7">Lorem ipsum dolor sit amet.</p>
+               <p id="para8">Lorem ipsum dolor sit amet.</p>
+            </section>
+         </div>
     </main>
    
 </body>
