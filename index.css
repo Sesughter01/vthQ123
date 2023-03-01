@@ -1,1 +1,70 @@
 /*  CSS STYLE COMMENTS HERE  */
+/* DESIGN IS MOBILE FIRST */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    /* height: 100vh; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: aqua; */
+}
+main{
+    padding-inline: 0;
+}
+main .main_header{
+    /* background-color: aqua; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    padding-block: 1.5rem;
+    
+}
+
+/* Take out navbar from mobile */
+
+main .main_header .navbar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(200%);
+}
+main .main_header .desktop{
+    display: none;
+}
+main .main_header .menuButtonContainer,.menuButtonContainer::before,.menuButtonContainer::after{
+    
+    background-color: black;
+    border: none;
+    outline: none;
+    width: 2rem;
+    height: 4px;
+   
+}
+.menuButtonContainer{
+    position: relative;
+    
+}
+.menuButtonContainer::before,.menuButtonContainer::after{
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 100;
+}
+.menuButtonContainer::before{
+    top: -8px;
+}
+.menuButtonContainer::after{
+    top: 8px;
+}
