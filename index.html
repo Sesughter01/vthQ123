@@ -7,22 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fuel Station Online | Home</title>
 
-    <!-- Internal Styles -->
-    <style>
-        /* Basic css syntax 
-           css selector{
-             property:value;
-           }
-        */
-        body{ 
-            background-color: brown;        
-        }
-        main{
-            background-color: aqua;
-        }
-
-
-    </style>
+   
 </head>
 <!-- There  3 main ways to include css styling in html
    1. Inline styling
@@ -30,10 +15,34 @@
    3. External styling
 -->
 <body>
-    <main style=" height: 100vh; ">
+    <main >
          <header>
               <!-- Logo below -->
               <h4>StationMaster</h4>
+             <!-- Mobile Menu Button -->
+              <button type="button" class="menuButtonContainer">
+                    <span class="hamburger"></span>
+              </button>
+
+              <!-- Navigation bar below : hidden in mobile view -->
+              <nav class="navbar">
+                  <ul class="list">
+                     <li class="item"><a href="" class="link">Home</a></li>
+                     <li class="item"><a href="" class="link">About</a></li>
+                     <li class="item"><a href="" class="link">Services</a></li>
+                     <li class="item"><a href="" class="link">Contact</a></li>
+                  </ul>
+
+                  <div class="mobile">
+                      <a href="#" class="login">Login</a>
+                      <a href="#" class="register">Sign-up</a>
+                  </div>
+                  
+              </nav>
+              <div class="desktop">
+                  <a href="#" class="login">Login</a>
+                  <a href="#" class="register">Sign-up</a>
+               </div>
          </header>
     </main>
    
