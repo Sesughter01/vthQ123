@@ -25,8 +25,9 @@ img{
     max-width: 100%;
 }
 .btn{
-   
-    margin-inline: auto;
+    
+    text-align: center;
+    margin-inline: 1rem;
     padding-block: 1rem;
     padding-inline: 5rem;
     
@@ -143,4 +144,35 @@ main .main_header .menuButtonContainer,.menuButtonContainer::before,.menuButtonC
     align-items: center;
     gap: 1rem;
     padding: 2rem;
+}
+
+/* MEDIA QUERY */
+@media(min-width:900px){
+    .section_one{
+       
+        flex-direction: row;
+        
+        
+    }  
+    .section_one .imgContainer{
+       
+       order: 2;
+        
+        
+    }  
+    .section_one .textContent{
+       
+       display: flex;
+       flex-direction: column;
+       
+        
+        
+    }  
+    .section_one .textContent .cta_container{
+       
+       order: 2;
+
+        
+        
+    }  
 }
