@@ -8,16 +8,47 @@
 }
 
 html{
+    height: 100vh;
     font-size: 18px;
 }
 
 body{
-    /* height: 100vh; */
+    height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* background-color: aqua; */
 }
+a{
+    text-decoration: none;
+    
+}
+img{
+    max-width: 100%;
+}
+.btn{
+   
+    margin-inline: auto;
+    padding-block: 1rem;
+    padding-inline: 5rem;
+    
+}
+.btn_bg-accent{
+    background-color: #ff8a01;
+}
+.btn_border{
+    background-color: #fff;
+    border: 1px solid #ff8a01;
+}
+.btn-text-white{
+    color: aliceblue;
+}
+.btn-text-black{
+    color: black;
+}
 main{
     padding-inline: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 main .main_header{
     /* background-color: aqua; */
@@ -33,7 +64,8 @@ main .main_header{
 /* Take out navbar from mobile */
 
 main .main_header .navbar{
-    position: absolute;
+    
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -67,4 +99,48 @@ main .main_header .menuButtonContainer,.menuButtonContainer::before,.menuButtonC
 }
 .menuButtonContainer::after{
     top: 8px;
+}
+
+/* SECTION ONE STYLES */
+
+.section_one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.section_one .cta_container{
+    
+     margin-block: 1rem;
+     
+     
+}
+.section_one .catchphrase{
+     margin-block: 1rem;
+     text-align: center;
+     
+     
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #015682;
+    color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    margin-bottom: 0;
+}
+.footer .footer_top{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+   
+    color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
 }
